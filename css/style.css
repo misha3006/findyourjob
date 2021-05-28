@@ -9,6 +9,9 @@ body {
   color: #111238;
   margin: 0;
 }
+img {
+  max-width: 100%;
+}
 .header {
   background-color: #f2f3f6;
 }
@@ -32,10 +35,10 @@ body {
 }
 .button-icon {
   vertical-align: middle;
-  margin-right: 10px;
 }
 .button-text {
   vertical-align: middle;
+  margin-left: 10px;
 }
 .button-link {
   color: #111238;
@@ -231,4 +234,77 @@ body {
   line-height: 19px;
   text-decoration: none;
   color: #111238;
+}
+@media (max-width: 1200px) {
+  .offer-salary {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .more {
+    margin-right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .more {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .offer-title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .tag {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  .is-open {
+    transform: translateX(0);
+  }
+  .menu-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .button-link {
+    margin-right: 0;
+  }
+  .close-button {
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    text-align: right;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    text-align: center;
+  }
+  .card {
+    max-width: 250px;
+    margin: auto;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .hero {
+    text-align: center;
+  }
+
+  .tags-label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
